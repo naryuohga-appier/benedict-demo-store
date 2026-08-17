@@ -25,7 +25,7 @@
     gr_deva70:     { brand: "GREGORY", name: "ディバ70 S", price: 47520, was: 59400, img: "assets/product-14-gregory-deva-70.jpg", colors: ["#9a9a94","#3f5a4a","#1b1b1b"] },
     gr_baltoro75:  { brand: "GREGORY", name: "バルトロ75 S", price: 47520, was: 59400, img: "assets/product-15-gregory-baltoro-75.jpg", colors: ["#1b1b1b","#3c5a6b","#6b5a3c"] },
     gr_border25:   { brand: "GREGORY", name: "ボーダー25", price: 20240, was: 25300, img: "assets/product-16-gregory-border-25.jpg", colors: ["#1b1b1b","#4a4f58","#6f6355"] },
-    gr_raincover:  { brand: "GREGORY", name: "レインカバー 50L–80L", price: 7150, img: "assets/product-17-gregory-raincover.jpg", colors: ["#c0392b","#1b1b1b"] },
+    gr_raincover:  { brand: "GREGORY", name: "レインカバー 50L-80L", price: 7150, img: "assets/product-17-gregory-raincover.jpg", colors: ["#c0392b","#1b1b1b"] },
 
     /* ===== karrimor ===== */
     km_lancs28:    { brand: "karrimor", name: "lancs 28", price: 20000, img: "assets/product-18-karrimor-lancs-28.jpg", colors: ["#1b1b1b","#4a5a6b","#6b6152"] },
