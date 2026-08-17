@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BENEDICT（ベネディクト）公式オンラインストア | Crafted to Fit, Built to Roam.</title>
+<meta name="description" content="BENEDICT公式オンラインストア。背負い心地を追求したバックパック、デイパック、ショルダーバッグをオンラインでお買い求めいただけます。">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<!-- ============ 告知バー ============ -->
+<div class="announce">
+  <div class="announce__track">
+    <span>￥5,500以上のご購入で送料無料</span>
+    <span aria-hidden="true">・</span>
+    <span>新規会員登録で10%OFFクーポンプレゼント</span>
+  </div>
+</div>
+
+<!-- ============ ヘッダー ============ -->
+<header class="header" id="siteHeader">
+  <div class="header__bar">
+    <div class="segmented" role="tablist" aria-label="サイト切り替え">
+      <button class="segmented__btn is-active" role="tab" aria-selected="true">ライフスタイル</button>
+      <button class="segmented__btn" role="tab" aria-selected="false">アウトドア</button>
+    </div>
+
+    <a class="brand" href="#top" aria-label="BENEDICT ホーム">
+      <img class="brand__logo brand__logo--light" src="assets/logo-mark-white.png" alt="BENEDICT">
+      <img class="brand__logo brand__logo--dark" src="assets/logo-mark.png" alt="" aria-hidden="true">
+      <span class="brand__word">BENEDICT</span>
+    </a>
+
+    <div class="header__actions">
+      <button class="iconbtn" aria-label="店舗を探す">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      </button>
+      <button class="iconbtn" aria-label="アカウント">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.7"/><path d="M4.5 20c1.2-3.9 4-5.9 7.5-5.9s6.3 2 7.5 5.9"/></svg>
+      </button>
+      <button class="iconbtn" aria-label="検索">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.4"/><path d="M16 16l4.5 4.5"/></svg>
+      </button>
+      <button class="iconbtn iconbtn--cart" aria-label="カート（0点）">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.4 11.2a2 2 0 0 1-2 1.8H7.4a2 2 0 0 1-2-1.8L4 7z"/><path d="M9 9V6.6a3 3 0 0 1 6 0V9"/></svg>
+        <span class="cartdot" aria-hidden="true">0</span>
+      </button>
+      <button class="iconbtn burger" id="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header__nav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="#shop">新着アイテム</a></li>
+      <li><a href="#shop">限定コラボアイテム</a></li>
+      <li><a href="#shop">大容量おすすめアイテム</a></li>
+      <li><a href="#shop">ギフト</a></li>
+      <li><a href="#shop">バックパック一覧</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ モバイルドロワー ============ -->
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="モバイルナビゲーション">
+    <div class="drawer__switch" role="tablist" aria-label="サイト切り替え">
+      <button class="is-active" role="tab" aria-selected="true">ライフスタイル</button>
+      <button role="tab" aria-selected="false">アウトドア</button>
+    </div>
+    <a href="#shop">新着アイテム</a>
+    <a href="#shop">限定コラボアイテム</a>
+    <a href="#shop">大容量おすすめアイテム</a>
+    <a href="#shop">ギフト</a>
+    <a href="#shop">バックパック一覧</a>
+    <hr>
+    <a href="#style">スタイルから選ぶ</a>
+    <a href="#news">ニュース</a>
+    <a href="#explorer">EXPLORER</a>
+  </nav>
+</div>
+<div class="drawer-scrim" id="scrim" hidden></div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============ ヒーロー ============ -->
+<section class="hero" aria-roledescription="カルーセル" aria-label="キャンペーン">
+  <div class="hero__viewport" id="heroViewport">
+    <article class="hero__slide is-active">
+      <img src="assets/hero-01-roam.jpg" alt="街を歩く男性がバックパックを背負っている様子">
+      <div class="hero__inner">
+        <h2 class="hero__title">ROAM</h2>
+        <a class="btn btn--ghost" href="#shop">詳しく見る</a>
+      </div>
+    </article>
+    <article class="hero__slide">
+      <img src="assets/hero-02-outset.jpg" alt="日常のシーンでバッグを使用している様子" loading="lazy">
+      <div class="hero__inner">
+        <h2 class="hero__title">OUTSET</h2>
+        <a class="btn btn--ghost" href="#shop">詳しく見る</a>
+      </div>
+    </article>
+    <article class="hero__slide">
+      <img src="assets/hero-03-summit.jpg" alt="山でバックパックを背負う登山者" loading="lazy">
+      <div class="hero__inner">
+        <h2 class="hero__title">SUMMIT</h2>
+        <a class="btn btn--ghost" href="#shop">詳しく見る</a>
+      </div>
+    </article>
+  </div>
+  <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="前のスライド">‹</button>
+  <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="次のスライド">›</button>
+  <div class="hero__dots" id="heroDots" role="tablist" aria-label="スライド選択"></div>
+</section>
+
+<!-- ============ スタイルから選ぶ ============ -->
+<section class="style" id="style">
+  <div class="style__head">
+    <h2 class="style__title">スタイルから選ぶ</h2>
+  </div>
+  <div class="rail" data-rail>
+    <ul class="rail__track style__track">
+      <li class="stylecard">
+        <a href="#shop">
+          <img src="assets/style-01-daypack.jpg" alt="デイパックを背負う人" loading="lazy">
+          <span class="stylecard__label">デイパック</span>
+        </a>
+      </li>
+      <li class="stylecard">
+        <a href="#shop">
+          <img src="assets/style-02-shoulder.jpg" alt="ショルダーバッグを持つ人" loading="lazy">
+          <span class="stylecard__label">ショルダーバッグ</span>
+        </a>
+      </li>
+      <li class="stylecard">
+        <a href="#shop">
+          <img src="assets/style-03-waist.jpg" alt="ウエストバッグを身につけた人" loading="lazy">
+          <span class="stylecard__label">ウエストバッグ</span>
+        </a>
+      </li>
+      <li class="stylecard">
+        <a href="#shop">
+          <img src="assets/style-04-tote.jpg" alt="トートバッグを持つ人" loading="lazy">
+          <span class="stylecard__label">トートバッグ</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 2カラム エディトリアル ============ -->
+<section class="editorial">
+  <div class="editorial__pane">
+    <img src="assets/editorial-01.jpg" alt="街中でデイパックを背負う人" loading="lazy">
+  </div>
+  <div class="editorial__pane editorial__pane--text">
+    <img src="assets/editorial-02.jpg" alt="デイパックのディテール" loading="lazy">
+    <div class="editorial__overlay">
+      <h2>デイパック</h2>
+      <p>ブランド創業時から受け継ぐティアドロップ型のシルエットに、現代の毎日に合わせたフィット感と収納を。<br>通勤からトレイルまで、背負い続けられる一つを。</p>
+      <a class="btn btn--ghost" href="#shop">商品を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Shop ============ -->
+<section class="shop" id="shop">
+  <div class="shop__inner">
+    <aside class="shop__side">
+      <h2 class="shop__title">Shop</h2>
+      <ul class="shop__tabs" role="tablist" aria-label="商品リスト切り替え">
+        <li><button class="shop__tab is-active" role="tab" aria-selected="true" data-tab="ranking">ランキング</button></li>
+        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="new">新着商品</button></li>
+        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="limited">限定商品</button></li>
+        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="pick">おすすめ</button></li>
+      </ul>
+    </aside>
+
+    <div class="shop__main">
+      <div class="rail" data-rail>
+        <ul class="rail__track product-track" id="shopTrack"></ul>
+      </div>
+      <div class="rail__nav">
+        <button class="rail__arrow" data-dir="-1" aria-label="前へ">‹</button>
+        <button class="rail__arrow" data-dir="1" aria-label="次へ">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Features ============ -->
+<section class="features">
+  <div class="features__inner">
+    <div class="features__head">
+      <h2>Features</h2>
+      <p>取り扱い機能・サービスについて</p>
+    </div>
+    <ul class="features__list">
+      <li class="feature feature--a">
+        <a href="#shop">
+          <span class="feature__mark" aria-hidden="true">◇</span>
+          <span class="feature__name">パッキング（Backside）</span>
+          <span class="feature__sub">背面のパッキングとフィット調整について</span>
+        </a>
+      </li>
+      <li class="feature feature--b">
+        <a href="#shop">
+          <span class="feature__mark" aria-hidden="true">▭</span>
+          <span class="feature__name">ラップトップ収納</span>
+          <span class="feature__sub">PC・タブレットの持ち運びに対応</span>
+        </a>
+      </li>
+      <li class="feature feature--c">
+        <a href="#shop">
+          <span class="feature__mark" aria-hidden="true">✳</span>
+          <span class="feature__name">タペストリー</span>
+          <span class="feature__sub">シーズンごとのオリジナル柄</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ あなたにおすすめ ============ -->
+<section class="reco">
+  <h2 class="section-title">あなたにおすすめ</h2>
+  <div class="reco__wrap">
+    <button class="rail__arrow rail__arrow--float" data-dir="-1" aria-label="前へ">‹</button>
+    <div class="rail" data-rail>
+      <ul class="rail__track product-track" id="recoTrack"></ul>
+    </div>
+    <button class="rail__arrow rail__arrow--float" data-dir="1" aria-label="次へ">›</button>
+  </div>
+</section>
+
+<!-- ============ ニュース ============ -->
+<section class="news" id="news">
+  <h2 class="section-title">ニュース</h2>
+  <div class="news__wrap">
+    <button class="rail__arrow rail__arrow--float rail__arrow--light" data-dir="-1" aria-label="前へ">‹</button>
+    <div class="rail" data-rail>
+      <ul class="rail__track news__track">
+        <li class="newscard">
+          <a href="#news">
+            <div class="newscard__media">
+              <img src="assets/news-01-campaign.jpg" alt="キャンペーンのビジュアル" loading="lazy">
+              <span class="newscard__caption">BENEDICT WEEK<br><small>10% OFF SPECIAL COUPON</small><br><small>8/7 Fri – 8/16 Sun</small></span>
+            </div>
+            <p class="newscard__date">2026.08.07</p>
+            <p class="newscard__title">【10%OFFクーポン】「BENEDICT WEEK」開催</p>
+          </a>
+        </li>
+        <li class="newscard">
+          <a href="#news">
+            <div class="newscard__media newscard__media--plain">
+              <img class="newscard__logo" src="assets/logo-mark.png" alt="" aria-hidden="true">
+            </div>
+            <p class="newscard__date">2026.07.24</p>
+            <p class="newscard__title">夏季休業に伴う出荷・お問い合わせ対応について</p>
+          </a>
+        </li>
+        <li class="newscard">
+          <a href="#news">
+            <div class="newscard__media newscard__media--plain">
+              <img class="newscard__logo" src="assets/logo-mark.png" alt="" aria-hidden="true">
+            </div>
+            <p class="newscard__date">2026.07.24</p>
+            <p class="newscard__title">【キャンペーン】新規会員登録で10%OFFクーポンプレゼント</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button class="rail__arrow rail__arrow--float rail__arrow--light" data-dir="1" aria-label="次へ">›</button>
+  </div>
+  <p class="news__more"><a href="#news">もっと見る</a></p>
+</section>
+
+<!-- ============ EXPLORER ============ -->
+<section class="explorer" id="explorer">
+  <h2 class="section-title">EXPLORER #ベネディクト</h2>
+  <ul class="explorer__grid" id="explorerGrid"></ul>
+</section>
+
+</main>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__signup">
+      <p class="footer__signup-lead">最新情報や限定オファーを受け取る</p>
+      <form class="signup" onsubmit="return false;">
+        <label class="visually-hidden" for="email">メールアドレス</label>
+        <input id="email" type="email" placeholder="メールアドレス" autocomplete="email">
+        <button type="submit" class="btn btn--solid">登録する</button>
+      </form>
+      <p class="footer__note">ご登録の前に<a href="#">プライバシーポリシー</a>をご確認ください</p>
+    </div>
+    <div class="footer__social">
+      <p class="footer__social-lead">SNS</p>
+      <ul>
+        <li><a href="#" aria-label="Instagram"><span aria-hidden="true">◎</span></a></li>
+        <li><a href="#" aria-label="X"><span aria-hidden="true">✕</span></a></li>
+        <li><a href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a></li>
+        <li><a href="#" aria-label="YouTube"><span aria-hidden="true">▶</span></a></li>
+        <li><a href="#" aria-label="LINE"><span aria-hidden="true">L</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__cols">
+    <div class="footer__col">
+      <h3>ご案内</h3>
+      <ul>
+        <li><a href="#">ご注文方法を確認する</a></li>
+        <li><a href="#">ご注文状況を確認する</a></li>
+        <li><a href="#">返品・交換・修理</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>サポート</h3>
+      <ul>
+        <li><a href="#">よくあるご質問</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">配送・送料について</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>BENEDICT Life</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>カスタマーサービス</h3>
+      <ul>
+        <li><a href="#">製品保証について</a></li>
+        <li><a href="#">プロダクトメンテナンス</a></li>
+        <li><a href="#">正規取扱店・店舗一覧</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <img class="footer__logo" src="assets/logo-full-white.png" alt="BENEDICT — Crafted to Fit, Built to Roam.">
+    <p class="footer__legal">
+      <span>Copyright © BENEDICT. All rights reserved.</span>
+      <span><a href="#">プライバシーポリシー</a></span>
+      <span><a href="#">特定商取引法に基づく表記</a></span>
+      <span><a href="#">利用規約</a></span>
+    </p>
+    <p class="footer__disclaimer">
+      本サイトはデモンストレーション用のプロトタイプです。実在の企業・ブランドとは一切関係がありません。
+      掲載中の写真は参考表示であり、権利は各権利者に帰属します。価格・在庫・注文機能は動作しません。
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- ============ BotBonnie WebChat ============ -->
+<script>
+  // BotBonnie の API トークン / API シークレット / CRM 暗号鍵は、静的なフロントエンドに絶対に置かないこと。
+  const BOTBONNIE_PAGE_ID = "page-86eb853ff64e474aba0bb2c1";
+
+  window.BBAsyncInit = function () {
+    BB.init({
+      appId: BOTBONNIE_PAGE_ID
+    });
+  };
+</script>
+<script async type="text/javascript" src="https://asset.botbonnie.com/sdk/sdk.js"></script>
+</body>
+</html>
