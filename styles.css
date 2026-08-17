@@ -384,3 +384,41 @@ h1,h2,h3,p{margin:0}
 .hero__slide.ph .ph__label{display:none}
 .pcard__media.ph{background:linear-gradient(135deg,#e9ece9,#cfd8d2)}
 .pcard__media.ph .ph__label{color:#1a3b2b}
+
+/* ---------- 小売（セレクトショップ）向け追加 ---------- */
+.hero__lead{font-size:clamp(12px,1.2vw,14px);letter-spacing:.06em;max-width:32em;opacity:.95}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 16px}
+.chip{
+  font-size:12px;letter-spacing:.04em;padding:6px 15px;border-radius:999px;
+  border:1px solid var(--line);color:var(--ink-2);background:#fff;white-space:nowrap;
+  transition:background .2s,color .2s,border-color .2s;
+}
+.chip:hover{border-color:var(--green);color:var(--green)}
+.chip.is-active{background:var(--green);border-color:var(--green);color:#fff;font-weight:700}
+
+.pcard__brand{
+  font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.12em;
+  color:var(--green);margin-top:11px;text-transform:uppercase;
+}
+.pcard__name{margin-top:3px}
+.shop__empty{font-size:12.5px;color:var(--ink-2);padding:18px 2px 0;line-height:1.8}
+
+.brands{background:var(--bg-2)}
+.brands__grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.4vw,18px);
+  max-width:var(--max);margin:0 auto;padding:0 var(--pad) clamp(38px,5vw,62px);
+}
+.brandcard a{
+  display:flex;flex-direction:column;gap:6px;height:100%;padding:clamp(20px,2.4vw,30px);
+  background:#fff;border:1px solid var(--line);transition:border-color .2s,transform .2s;
+}
+.brandcard a:hover{border-color:var(--green);transform:translateY(-2px)}
+.brandcard__name{font-family:var(--font-display);font-size:clamp(15px,1.6vw,19px);font-weight:700;letter-spacing:.08em;color:var(--green)}
+.brandcard__meta{font-size:11px;color:var(--ink-2);letter-spacing:.04em}
+.brandcard__note{font-size:12px;line-height:1.8;color:var(--ink)}
+.brandcard--order a{background:linear-gradient(135deg,#eef1ee,#e3e9e4);border-style:dashed}
+
+@media (max-width:900px){
+  .brands__grid{grid-template-columns:1fr}
+}

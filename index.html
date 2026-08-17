@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BENEDICT（ベネディクト）公式オンラインストア | Crafted to Fit, Built to Roam.</title>
-<meta name="description" content="BENEDICT公式オンラインストア。背負い心地を追求したバックパック、デイパック、ショルダーバッグをオンラインでお買い求めいただけます。">
+<title>BENEDICT（ベネディクト）｜アウトドアバックパック セレクトショップ</title>
+<meta name="description" content="BENEDICTは GREGORY・karrimor など国内外のバックパックを取り扱うアウトドア専門セレクトショップです。用途に合わせた1つを、スタッフが一緒にお選びします。">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="assets/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,10 +61,10 @@
 
   <nav class="header__nav" aria-label="メインナビゲーション">
     <ul>
+      <li><a href="#brands">取扱ブランド</a></li>
       <li><a href="#shop">新着アイテム</a></li>
-      <li><a href="#shop">限定コラボアイテム</a></li>
-      <li><a href="#shop">大容量おすすめアイテム</a></li>
-      <li><a href="#shop">ギフト</a></li>
+      <li><a href="#shop">セール</a></li>
+      <li><a href="#style">スタイルから選ぶ</a></li>
       <li><a href="#shop">バックパック一覧</a></li>
     </ul>
   </nav>
@@ -77,10 +77,9 @@
       <button class="is-active" role="tab" aria-selected="true">ライフスタイル</button>
       <button role="tab" aria-selected="false">アウトドア</button>
     </div>
+    <a href="#brands">取扱ブランド</a>
     <a href="#shop">新着アイテム</a>
-    <a href="#shop">限定コラボアイテム</a>
-    <a href="#shop">大容量おすすめアイテム</a>
-    <a href="#shop">ギフト</a>
+    <a href="#shop">セール</a>
     <a href="#shop">バックパック一覧</a>
     <hr>
     <a href="#style">スタイルから選ぶ</a>
@@ -99,21 +98,24 @@
     <article class="hero__slide is-active">
       <img src="assets/hero-01-roam.jpg" alt="街を歩く男性がバックパックを背負っている様子">
       <div class="hero__inner">
-        <h2 class="hero__title">ROAM</h2>
+        <h2 class="hero__title">背負って、決める。</h2>
+        <p class="hero__lead">GREGORY・karrimor を実際に背負って選べる店</p>
         <a class="btn btn--ghost" href="#shop">詳しく見る</a>
       </div>
     </article>
     <article class="hero__slide">
       <img src="assets/hero-02-outset.jpg" alt="日常のシーンでバッグを使用している様子" loading="lazy">
       <div class="hero__inner">
-        <h2 class="hero__title">OUTSET</h2>
+        <h2 class="hero__title">通勤も、週末も。</h2>
+        <p class="hero__lead">1つで両立するデイパックを厳選</p>
         <a class="btn btn--ghost" href="#shop">詳しく見る</a>
       </div>
     </article>
     <article class="hero__slide">
       <img src="assets/hero-03-summit.jpg" alt="山でバックパックを背負う登山者" loading="lazy">
       <div class="hero__inner">
-        <h2 class="hero__title">SUMMIT</h2>
+        <h2 class="hero__title">縦走のための一泊二日。</h2>
+        <p class="hero__lead">大容量パックはフィッティング承ります</p>
         <a class="btn btn--ghost" href="#shop">詳しく見る</a>
       </div>
     </article>
@@ -166,9 +168,9 @@
   <div class="editorial__pane editorial__pane--text">
     <img src="assets/editorial-02.jpg" alt="デイパックのディテール" loading="lazy">
     <div class="editorial__overlay">
-      <h2>デイパック</h2>
-      <p>ブランド創業時から受け継ぐティアドロップ型のシルエットに、現代の毎日に合わせたフィット感と収納を。<br>通勤からトレイルまで、背負い続けられる一つを。</p>
-      <a class="btn btn--ghost" href="#shop">商品を見る</a>
+      <h2>選び方に迷ったら</h2>
+      <p>容量・背負い心地・使うシーンは人それぞれです。当店では複数ブランドを横断して比較できるので、「このブランドのこの容量」ではなく「あなたの荷物量に合う1つ」からご提案できます。<br>オンラインでもチャットでご相談いただけます。</p>
+      <a class="btn btn--ghost" href="#shop">相談しながら選ぶ</a>
     </div>
   </div>
 </section>
@@ -181,15 +183,21 @@
       <ul class="shop__tabs" role="tablist" aria-label="商品リスト切り替え">
         <li><button class="shop__tab is-active" role="tab" aria-selected="true" data-tab="ranking">ランキング</button></li>
         <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="new">新着商品</button></li>
-        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="limited">限定商品</button></li>
-        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="pick">おすすめ</button></li>
+        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="sale">セール</button></li>
+        <li><button class="shop__tab" role="tab" aria-selected="false" data-tab="outdoor">アウトドア向け</button></li>
       </ul>
     </aside>
 
     <div class="shop__main">
+      <div class="chips" role="tablist" aria-label="ブランドで絞り込む">
+        <button class="chip is-active" role="tab" aria-selected="true" data-brand="all">すべて</button>
+        <button class="chip" role="tab" aria-selected="false" data-brand="GREGORY">GREGORY</button>
+        <button class="chip" role="tab" aria-selected="false" data-brand="karrimor">karrimor</button>
+      </div>
       <div class="rail" data-rail>
         <ul class="rail__track product-track" id="shopTrack"></ul>
       </div>
+      <p class="shop__empty" id="shopEmpty" hidden></p>
       <div class="rail__nav">
         <button class="rail__arrow" data-dir="-1" aria-label="前へ">‹</button>
         <button class="rail__arrow" data-dir="1" aria-label="次へ">›</button>
@@ -198,33 +206,61 @@
   </div>
 </section>
 
+<!-- ============ 取扱ブランド ============ -->
+<section class="brands" id="brands">
+  <h2 class="section-title">取扱ブランド</h2>
+  <ul class="brands__grid">
+    <li class="brandcard">
+      <a href="#shop">
+        <span class="brandcard__name">GREGORY</span>
+        <span class="brandcard__meta">17アイテム取扱</span>
+        <span class="brandcard__note">米カリフォルニア発。背負い心地を追求したフィッティング設計</span>
+      </a>
+    </li>
+    <li class="brandcard">
+      <a href="#shop">
+        <span class="brandcard__name">karrimor</span>
+        <span class="brandcard__meta">9アイテム取扱</span>
+        <span class="brandcard__note">英国発。登山用大型パックからタウン向けまで幅広く展開</span>
+      </a>
+    </li>
+    <li class="brandcard brandcard--order">
+      <a href="#">
+        <span class="brandcard__name">その他ブランド</span>
+        <span class="brandcard__meta">お取り寄せ承ります</span>
+        <span class="brandcard__note">当店在庫のないブランド・モデルもお問い合わせください</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
 <!-- ============ Features ============ -->
 <section class="features">
   <div class="features__inner">
     <div class="features__head">
-      <h2>Features</h2>
-      <p>取り扱い機能・サービスについて</p>
+      <h2>Services</h2>
+      <p>当店のサービスについて</p>
     </div>
     <ul class="features__list">
       <li class="feature feature--a">
         <a href="#shop">
           <span class="feature__mark" aria-hidden="true">◇</span>
-          <span class="feature__name">パッキング（Backside）</span>
-          <span class="feature__sub">背面のパッキングとフィット調整について</span>
+          <span class="feature__name">フィッティング</span>
+          <span class="feature__sub">店頭で実際に背負って調整できます</span>
         </a>
       </li>
       <li class="feature feature--b">
         <a href="#shop">
           <span class="feature__mark" aria-hidden="true">▭</span>
-          <span class="feature__name">ラップトップ収納</span>
-          <span class="feature__sub">PC・タブレットの持ち運びに対応</span>
+          <span class="feature__name">お取り寄せ</span>
+          <span class="feature__sub">在庫のないモデルもご相談ください</span>
         </a>
       </li>
       <li class="feature feature--c">
         <a href="#shop">
           <span class="feature__mark" aria-hidden="true">✳</span>
-          <span class="feature__name">タペストリー</span>
-          <span class="feature__sub">シーズンごとのオリジナル柄</span>
+          <span class="feature__name">修理受付</span>
+          <span class="feature__sub">メーカー保証・修理の取次を行います</span>
         </a>
       </li>
     </ul>
@@ -287,7 +323,7 @@
 
 <!-- ============ EXPLORER ============ -->
 <section class="explorer" id="explorer">
-  <h2 class="section-title">EXPLORER #ベネディクト</h2>
+  <h2 class="section-title">お客様の使用シーン #ベネディクト</h2>
   <ul class="explorer__grid" id="explorerGrid"></ul>
 </section>
 
@@ -335,19 +371,19 @@
       </ul>
     </div>
     <div class="footer__col">
-      <h3>BENEDICT Life</h3>
+      <h3>当店について</h3>
       <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">Technology</a></li>
+        <li><a href="#">店舗案内・アクセス</a></li>
+        <li><a href="#brands">取扱ブランド一覧</a></li>
+        <li><a href="#">スタッフのおすすめ</a></li>
       </ul>
     </div>
     <div class="footer__col">
       <h3>カスタマーサービス</h3>
       <ul>
-        <li><a href="#">製品保証について</a></li>
-        <li><a href="#">プロダクトメンテナンス</a></li>
-        <li><a href="#">正規取扱店・店舗一覧</a></li>
+        <li><a href="#">メーカー保証・修理受付</a></li>
+        <li><a href="#">お取り寄せのご案内</a></li>
+        <li><a href="#">並行輸入品について</a></li>
       </ul>
     </div>
   </div>
@@ -361,8 +397,9 @@
       <span><a href="#">利用規約</a></span>
     </p>
     <p class="footer__disclaimer">
-      本サイトはデモンストレーション用のプロトタイプです。実在の企業・ブランドとは一切関係がありません。
-      掲載中の写真は参考表示であり、権利は各権利者に帰属します。価格・在庫・注文機能は動作しません。
+      本サイトはデモンストレーション用のプロトタイプです。BENEDICT は架空の店舗であり、
+      掲載しているブランド・企業とは提携・取引関係にありません。商品画像および商品名の権利は各権利者に帰属します。
+      価格は各ブランド公式サイトの掲載値を参考に転記したもので、カート・会員・決済機能は動作しません。
     </p>
   </div>
 </footer>

@@ -1,11 +1,14 @@
-# BENEDICT — Demo Storefront
+# BENEDICT — Demo Storefront（アウトドアバックパック セレクトショップ）
 
 BotBonnie / Service Agent デモ用の静的プロトタイプサイトです。
+BENEDICT は複数ブランドを取り扱う小売店という設定で、商品はブランド名つきで掲載しています。
 
 - 1ページ構成の静的サイト（フレームワークなし）
 - BotBonnie WebChat 組み込み済み（Page ID: `page-86eb853ff64e474aba0bb2c1`）
 - レスポンシブ対応：1440 / 1024 / 768 / 390px 検証済み
 - 公開URL: https://naryuohga-appier.github.io/benedict-demo-store/
+- 取扱ブランド: GREGORY（17点）/ karrimor（9点）+ その他ブランドはお取り寄せ設定
+- 商品カードにブランド名を表示。Shopはタブ（ランキング/新着/セール/アウトドア向け）×ブランド絞り込み
 
 ## ファイル構成
 
