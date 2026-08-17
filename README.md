@@ -5,6 +5,7 @@ BotBonnie / Service Agent デモ用の静的プロトタイプサイトです。
 - 1ページ構成の静的サイト（フレームワークなし）
 - BotBonnie WebChat 組み込み済み（Page ID: `page-86eb853ff64e474aba0bb2c1`）
 - レスポンシブ対応：1440 / 1024 / 768 / 390px 検証済み
+- 公開URL: https://naryuohga-appier.github.io/benedict-demo-store/
 
 ## ファイル構成
 
@@ -13,18 +14,37 @@ index.html      トップページ
 styles.css      スタイル
 script.js       商品データ・スライダー・レール・ドロワー
 assets/         ロゴ（PNG）と各種画像
-IMAGE_SPEC.md   必要画像35枚の一覧と生成プロンプト
 .nojekyll       GitHub Pages で Jekyll 処理をスキップ
 ```
 
+## ブランド仕様
+
+| 項目 | 値 |
+|---|---|
+| ブランドカラー | `#1a3b2b` |
+| ブランド名フォント | Montserrat Bold（letter-spacing 0.12em） |
+| タグラインフォント | Lato Regular |
+| タグライン | Crafted to Fit, Built to Roam. |
+
 ## 画像の追加方法
 
-`IMAGE_SPEC.md` のファイル名どおりにリネームして `assets/` に置くだけで反映されます。
+必要な画像35枚の仕様・ファイル名・生成プロンプトは、このリポジトリの外にある
+`../tools/IMAGE_SPEC.md` にまとめています。生成は `../tools/generate_images.py` で一括実行できます。
+
+```bash
+cd ..                                              # BENEDICT/ へ
+python3 tools/generate_images.py --only product-01  # 基準の1枚
+python3 tools/generate_images.py                    # 残りすべて
+python3 tools/generate_images.py --install          # Github-IO/assets/ へ配置
+```
+
+指定のファイル名で `assets/` に置くだけで反映されます。
 未配置の画像はブランドカラーのプレースホルダーが自動表示されます。
 
 ## GitHub Pages
 
-`Settings > Pages > Deploy from a branch > main > / (root)` で公開できます。
+`Settings > Pages > Deploy from a branch > main > / (root)` で公開しています。
+push から1〜2分で反映されます。
 
 ## 注意
 
