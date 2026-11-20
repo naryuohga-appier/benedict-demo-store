@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAL | Service Agent Demo</title>
+<meta name="description" content="Service Agentのデモンストレーション用モックアップページです。画面キャプチャにBotBonnie WebChatを設置しています。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="format-detection" content="telephone=no">
+
+<style>
+  /* ============================================================
+     画像サイズ調整用の設定値
+     --pc-img-w     : dcl-fullpage.png の実寸幅（px単位の数値のみ）
+     --pc-content-w : そのキャプチャ内のコンテンツ部分の幅（px単位の数値のみ）
+     例）1440px幅でキャプチャし、コンテンツ幅が1200pxの場合
+         --pc-img-w: 1440;  --pc-content-w: 1200;
+     ※画像幅＝コンテンツ幅（両端に余白がない）ならどちらも同じ値でOK
+     ============================================================ */
+  :root{
+    --green:#1a3b2b;
+    --green-d:#12291d;
+    --pc-img-w: 1600;
+    --pc-content-w: 1600;
+    --bp-pc: 1600px;   /* PC表示の下限 */
+    --bp-sp: 640px;    /* スマホ画像に切り替える上限 */
+  }
+
+  html,body{margin:0;padding:0;}
+  html,body{overflow-x:hidden;}   /* 画面幅を超えた部分はカット（横スクロールを出さない） */
+  body{
+    background:#fff;
+    -webkit-text-size-adjust:100%;
+  }
+  a{color:inherit;text-decoration:none}
+  .page{
+    display:flex;
+    justify-content:center;        /* 中央揃え（左右均等にカット） */
+    align-items:flex-start;
+    width:100%;
+    overflow:hidden;
+  }
+  .page__img{
+    display:block;
+    flex:none;
+    height:auto;
+    max-width:none;                /* 既定の縮小を無効化 */
+    width:auto;                    /* 幅1200px以上：リサイズなし＝実寸100%表示 */
+    image-rendering:auto;
+  }
+
+/* ---------- フッター ---------- */
+.footer{background:var(--green-d);color:rgba(255,255,255,.86);font-size:12px}
+.footer__top{
+  max-width:var(--max);margin:0 auto;padding:clamp(30px,4vw,52px) var(--pad) clamp(20px,2.6vw,34px);
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:start;
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+.footer__signup-lead{font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.06em;color:#fff;margin-bottom:12px}
+.signup{display:flex;gap:8px;max-width:460px}
+.signup input{
+  flex:1 1 auto;min-width:0;padding:11px 14px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;font-size:13px;border-radius:var(--radius);
+}
+.signup input::placeholder{color:rgba(255,255,255,.55)}
+.signup .btn--solid{background:#fff;color:var(--green-d);border-color:#fff;white-space:nowrap}
+.signup .btn--solid:hover{background:rgba(255,255,255,.85)}
+.footer__note{font-size:11px;color:rgba(255,255,255,.6);margin-top:9px}
+.footer__note a{text-decoration:underline}
+.footer__social-lead{font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.7);margin-bottom:10px}
+.footer__social ul{display:flex;gap:10px}
+.footer__social a{
+  width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
+  display:grid;place-items:center;font-size:13px;
+}
+.footer__social a:hover{background:rgba(255,255,255,.14)}
+
+.footer__cols{
+  max-width:var(--max);margin:0 auto;padding:clamp(26px,3.4vw,44px) var(--pad);
+  display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.6vw,40px);
+}
+.footer__col h3{font-size:12px;font-weight:700;color:#fff;letter-spacing:.08em;margin-bottom:12px}
+.footer__col li{margin-bottom:8px}
+.footer__col a{color:rgba(255,255,255,.78)}
+.footer__col a:hover{color:#fff;text-decoration:underline}
+
+.footer__bottom{
+  border-top:1px solid rgba(255,255,255,.14);
+  max-width:var(--max);margin:0 auto;padding:clamp(22px,3vw,36px) var(--pad) 40px;
+  display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;
+}
+.footer__logo{width:min(220px,60vw);height:auto;opacity:.95}
+.footer__legal{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;font-size:11px;color:rgba(255,255,255,.7)}
+.footer__legal a{text-decoration:underline}
+.footer__disclaimer{font-family:var(--font-copy);font-size:10.5px;line-height:1.8;color:rgba(255,255,255,.5);max-width:70ch}
+
+  /* 幅1200px未満：コンテンツ部分が画面幅に揃うように拡大／縮小
+     （画像に左右の余白がある場合は、その分だけ拡大して両端をカット） */
+  @media (max-width: 1599.98px){
+    .page__img{
+      width: calc(100vw * var(--pc-img-w) / var(--pc-content-w));
+    }
+  }
+
+  /* 幅480px以下：スマホ用画像（picture の source で切り替え）を画面幅ぴったりに */
+  @media (max-width: 640px){
+    .page__img{
+      width: 100vw;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ 画面キャプチャ（1ページ・リンクなし） ============ -->
+<div class="page">
+  <picture>
+    <source media="(max-width: 640px)" srcset="assets/callaway-sp.png">
+    <img class="page__img" src="assets/callaway-pc.png"
+         alt="デモ用キャプチャ">
+  </picture>
+</div>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="footer__bottom">
+    <p class="footer__legal">
+      <span>©Appier Group, Inc. (along with its subsidiaries) All rights reserved.</span>
+      <span><a href="#">プライバシーポリシー</a></span>
+      <span><a href="#">特定商取引法に基づく表記</a></span>
+      <span><a href="#">利用規約</a></span>
+    </p>
+    <p class="footer__disclaimer">
+      本サイトはデモンストレーション用のプロトタイプです。 DCL は架空の店舗であり、
+      掲載しているブランド・企業とは提携・取引関係にありません。商品画像および商品名の権利は各権利者に帰属します。
+      価格は各ブランド公式サイトの掲載値を参考に転記したもので、カート・会員・決済機能は動作しません。
+    </p>
+  </div>
+</footer>
+<!-- ============ BotBonnie WebChat ============ -->
+<script>
+  // BotBonnie の API トークン / API シークレット / CRM 暗号鍵は、静的なフロントエンドに絶対に置かないこと。
+  // ↓ デモ用アカウントの Page ID に差し替えて使用
+  const BOTBONNIE_PAGE_ID = "page-c68032bdfa5c4faab78dfd90";
+
+  window.BBAsyncInit = function () {
+    BB.init({
+      appId: BOTBONNIE_PAGE_ID
+    });
+  };
+</script>
+<script async type="text/javascript" src="https://asset.botbonnie.com/sdk/sdk.js"></script>
+</body>
+</html>
