@@ -20,9 +20,9 @@
   :root{
     --green:#1a3b2b;
     --green-d:#12291d;
-    --pc-img-w: 1200;
-    --pc-content-w: 1200;
-    --bp-pc: 1200px;   /* PC表示の下限 */
+    --pc-img-w: 1600;
+    --pc-content-w: 1600;
+    --bp-pc: 1600px;   /* PC表示の下限 */
     --bp-sp: 640px;    /* スマホ画像に切り替える上限 */
   }
 
@@ -95,7 +95,7 @@
 
   /* 幅1200px未満：コンテンツ部分が画面幅に揃うように拡大／縮小
      （画像に左右の余白がある場合は、その分だけ拡大して両端をカット） */
-  @media (max-width: 1199.98px){
+  @media (max-width: 1599.98px){
     .page__img{
       width: calc(100vw * var(--pc-img-w) / var(--pc-content-w));
     }
